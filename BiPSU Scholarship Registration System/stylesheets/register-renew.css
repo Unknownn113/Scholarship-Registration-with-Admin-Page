@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 185, 33, 0.897), rgba(0, 71, 171, 0.897)), url('images/Background1.png');
+    backdrop-filter: blur(1px);
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Back Button */
+.back {
+    position: absolute; /* Position the button relative to the viewport */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    background-color: #0047AB; /* Blue background */
+    color: #FFD302; /* Yellow text */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: 'Montserrat', sans-serif; /* Consistent font */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.back:hover {
+    background-color: #FFD302; /* Yellow background on hover */
+    color: #0047AB; /* Blue text on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Heading */
+h1 {
+    color: #FFD302;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Playfair Display";
+    width: 45%;
+}
+
+/* Buttons Section */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #0047AB;
+    color: #FFD302;
+    border: #FFD302 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-family: "Montserrat";
+    font-weight: bold;
+    width: 100%;
+}
+
+.buttons button span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.buttons button:hover {
+    background-color: #FFD302;
+    color: #0047AB;
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3rem; /* Reduce heading size */
+        width: 60%; /* Increase width for better fit */
+    }
+
+    .buttons {
+        gap: 50px; /* Reduce gap between buttons */
+    }
+
+    .buttons button {
+        font-size: 1.2rem; /* Reduce button text size */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .back {
+        font-size: 0.9rem; /* Reduce back button text size */
+        padding: 8px 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Further reduce heading size */
+        width: 70%; /* Increase width for better fit */
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 20px; /* Reduce gap between buttons */
+    }
+
+    .buttons button {
+        font-size: 1.1rem; /* Further reduce button text size */
+        padding: 10px; /* Adjust padding */
+        width: 80%; /* Reduce button width */
+    }
+
+    .back {
+        font-size: 0.8rem; /* Further reduce back button text size */
+        padding: 6px 12px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Smallest heading size */
+        width: 90%; /* Full width for small screens */
+    }
+
+    .buttons {
+        gap: 15px; /* Reduce gap between buttons */
+    }
+
+    .buttons button {
+        font-size: 1rem; /* Smallest button text size */
+        padding: 8px; /* Adjust padding */
+        width: 100%; /* Full width for buttons */
+    }
+
+    .back {
+        font-size: 0.7rem; /* Smallest back button text size */
+        padding: 5px 10px; /* Adjust padding */
+    }
+}

@@ -1,0 +1,284 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 185, 33, 0.897), rgba(0, 71, 171, 0.897)), url('images/Background1.png');
+    backdrop-filter: blur(1px);
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+header .BiPSU {
+    display: flex;
+    align-items: center;
+}
+
+header .BiPSU #Logo {
+    width: 50px;
+    height: auto;
+}
+
+header .BiPSU h3 {
+    color: #0047AB;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+header .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header .profile p {
+    color: #0047AB;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .profile button {
+    background-color: #FFD302;
+    color: #0047AB;
+    border: #0047AB 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+header .profile button:hover {
+    background-color: #0047AB;
+    color: #FFD302;
+    transform: scale(1.05);
+}
+
+/* Welcome Page Styles */
+.welcome {
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+}
+.welcome h1 {
+    color: #0047AB;
+    font-family: "Playfair Display";
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.welcome h4 {
+    color: #0047AB;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.welcome button {
+    background-color: #0047AB;
+    color: #FFD302;
+    border: 2px solid #FFD302;
+    border-radius: 30px;
+    padding: 10px;
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.welcome button:hover {
+    background-color: #FFD302;
+    color: #0047AB;
+    transform: scale(1.05);
+}
+
+/* About Section Styles */
+.about {
+    padding: 16px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(0,71,171,0.08);
+    font-size: 0.95rem;
+}
+
+.about h4 {
+    color: #0047AB;
+    font-family: "Playfair Display";
+    font-size: 1.5rem;
+}
+
+.about p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0px 0px 50px 0px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffd5027d;
+    color: #0047AB;
+    font-size: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 10%; /* Footer height dynamically adjusts */
+    min-height: 50px; /* Minimum height for smaller screens */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome h1 {
+        font-size: 3rem;
+    }
+
+    .welcome button {
+        width: 70%;
+    }
+    .about {
+        width: 98%;
+        max-width: 500px;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .about h4 {
+        font-size: 1.3rem;
+    }
+
+    .about p {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        height: 8%; /* Reduce footer height */
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .BiPSU #Logo {
+        width: 40px;
+    }
+
+    header .BiPSU h3 {
+        font-size: 1.5rem;
+    }
+
+    .welcome h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome button {
+        width: 80%;
+    }
+
+    .about {
+        width: 99%;
+        max-width: 400px;
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .about h4 {
+        font-size: 1.1rem;
+    }
+
+    .about p {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        height: 6%; /* Further reduce footer height */
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .BiPSU #Logo {
+        width: 30px;
+    }
+
+    header .BiPSU h3 {
+        font-size: 1.2rem;
+    }
+
+    header .profile button {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .welcome h1 {
+        font-size: 2rem;
+    }
+
+    .welcome button {
+        width: 90%;
+    }
+    
+    .about {
+        width: 100%;
+        max-width: 98vw;
+        padding: 6px;
+        margin: 5px auto 0 auto;
+        font-size: 0.8rem;
+    }
+    .about h4 {
+        font-size: 1rem;
+    }
+    .about p {
+        font-size: 0.75rem;
+        margin-bottom: 80px;
+    }
+
+    footer {
+        height: 5%; /* Smallest footer height */
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+}

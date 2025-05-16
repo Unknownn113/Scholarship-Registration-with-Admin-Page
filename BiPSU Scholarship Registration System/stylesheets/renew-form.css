@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(255, 185, 33, 0.897), rgba(0, 71, 171, 0.897)), url('images/Background1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Back Button */
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #0047AB;
+    color: #FFD302;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back:hover {
+    background-color: #FFD302;
+    color: #0047AB;
+    transform: scale(1.05);
+}
+
+/* Form Container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.form-container h1 {
+    font-size: 2rem;
+    color: #0047AB;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Form Fields */
+form label {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0047AB;
+    margin-bottom: 5px;
+}
+
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+form input[type="file"]:hover {
+    background-color: #f1f1f1;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0047AB;
+    color: #FFD302;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #FFD302;
+    color: #0047AB;
+    transform: scale(1.05);
+}
