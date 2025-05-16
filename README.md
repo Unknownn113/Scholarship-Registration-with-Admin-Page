@@ -1,7 +1,7 @@
 # Scholarship-Registration-with-Admin-Page
 
-To access the Admin Page:
-Enter in the Log In Screen the following:
+Enter the Following to Access the Admin Page:
+
 Student ID: Admin
 Password: admin123
 
