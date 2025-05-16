@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 5%;
+    background-image: linear-gradient(rgba(255, 185, 33, 0.897), rgba(0, 71, 171, 0.897)), url('images/Background1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #0047AB;
+    font-size: 2rem; /* Scaled down */
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #FFD302;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem; /* Scaled down */
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px; /* Scaled down */
+    background-color: #0047AB;
+    color: #FFD302;
+    border: #FFD302 1.5px solid; /* Scaled down */
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    border-radius: 20px; /* Scaled down */
+    font-size: 0.9rem; /* Scaled down */
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.buttons:hover {
+    background-color: #FFD302;
+    color: #0047AB;
+    border: #0047AB 1.5px solid; /* Scaled down */
+}
+
+/* Provide Requirements Section */
+.requirements-header {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #FFD302;
+    border: #FFD302 2px solid;
+    border-radius: 30px;
+    font-size: 1.5rem; /* Scaled down */
+    margin: 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    background-color: #0047AB;
+
+}
+
+/* Table Styles */
+.info-table-container,
+.requirements-table-container,
+.steps-table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.info-table,
+.requirements-table,
+.steps-table {
+    width: 90%; /* Adjusted for responsiveness */
+    border-collapse: collapse;
+    background-color: #0047AB;
+    color: white;
+    border-radius: 8px; /* Scaled down */
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); /* Scaled down */
+    font-family: "Inter", sans-serif; /* Changed font to Inter */
+    margin: 20px;
+}
+
+.info-table thead,
+.requirements-table thead,
+.steps-table thead {
+    background-color: #FFD302;
+    color: #0047AB;
+    font-size: 1rem; /* Scaled down */
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif; /* Changed font to Inter */
+}
+
+.info-table th,
+.info-table td,
+.requirements-table th,
+.requirements-table td,
+.steps-table th,
+.steps-table td {
+    padding: 10px; /* Scaled down */
+    text-align: center;
+    border: 1px solid #FFD302; /* Updated border color */
+    font-family: "Inter", sans-serif; /* Changed font to Inter */
+}
+
+.info-table tbody td,
+.requirements-table tbody td,
+.steps-table tbody td {
+    font-size: 0.9rem; /* Scaled down */
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: "Inter", sans-serif; /* Changed font to Inter */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller for smaller screens */
+    }
+
+    h6 {
+        font-size: 0.8rem;
+    }
+
+    .buttons {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .requirements-header {
+        font-size: 1.2rem;
+    }
+
+    .info-table,
+    .requirements-table,
+    .steps-table {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .info-table th,
+    .info-table td,
+    .requirements-table th,
+    .requirements-table td,
+    .steps-table th,
+    .steps-table td {
+        font-size: 0.8rem;
+        padding: 8px;
+        border: 1px solid #FFD302; /* Updated border color for smaller screens */
+    }
+}
